@@ -40,13 +40,13 @@
                 <artifactId>maven-site-plugin</artifactId>
                 <version>3.11.0</version>
                 <dependencies>
-                  <dependency>
-                    <groupId>org.apache.maven.wagon</groupId>
-                    <artifactId>wagon-ssh</artifactId>
-                    <version>3.5.1</version>
-                  </dependency>
+                    <dependency>
+                        <groupId>org.apache.maven.wagon</groupId>
+                        <artifactId>wagon-ssh</artifactId>
+                        <version>3.5.1</version>
+                    </dependency>
                 </dependencies>
-              </plugin>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -134,8 +134,9 @@
     </reporting>
     <distributionManagement>
         <site>
-          <id>shrek</id>
-          <url>scp://@shrek.unideb.hu:2222/home/<eduID>/public_html/${project.artifactId}</url>
+            <id>shrek</id>
+            <url>scp://altan.dzhumaev@shrek.unideb.hu:2222/home/altan.dzhumaev/public_html/${project.artifactId}</url>
         </site>
-      </distributionManagement>
+    </distributionManagement>
+
 </project>
